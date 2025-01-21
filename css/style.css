@@ -1,5 +1,6 @@
 :root {
-   --compli-primary: #ff4b33 
+   --compli-primary: #ff4b33; 
+   --compli-background: #000000;
 }
 
 body {
@@ -323,10 +324,11 @@ a:focus {
 .slider_section .detail-box .btn-1 {
   display: inline-block;
   padding: 10px 15px;
-  background-color: #03a7d3;
+  /* background-color: #03a7d3; */
+  background-color: var(--compli-background);
   color: #ffffff;
   border-radius: 5px;
-  border: 1px solid #03a7d3;
+  border: 1px solid var(--compli-background); /*03a7d3*/
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -448,7 +450,7 @@ a:focus {
 .service_section .box .img-box {
   width: 75px;
   height: 75px;
-  background-color: #03a7d3;
+  background-color: var(--compli-background);
   border-radius: 100%;
   display: -webkit-box;
   display: -ms-flexbox;

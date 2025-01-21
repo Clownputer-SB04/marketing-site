@@ -96,6 +96,7 @@
         </div> -->
       </header>
       <!-- end header section -->
+
       <!-- slider section -->
       <section class="slider_section">
         <!-- <div id="customCarousel1" class="carousel slide" data-ride="carousel"> -->
@@ -115,8 +116,12 @@
                         scheduling, ensure compliance, and maximize warranty benefits.
                       </p>
                       <div class="btn-box">
-                        <!-- <a href="" class="btn-1"> Read More </a> -->
-                        <a href="" class="btn-2"> Join Waitlist </a>
+                        <a href="#" 
+                           class="btn-2" 
+                           data-toggle="modal" 
+                           data-target="#waitlistModal">
+                          Join Waitlist
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -222,6 +227,59 @@
       <!-- end slider section -->
     </div>
 
+    <!-- Waitlist Modal -->
+    <div class="modal fade" id="waitlistModal" tabindex="-1" role="dialog" aria-labelledby="waitlistModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="waitlistModalLabel">Join Our Waitlist</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Form Fields -->
+            <form>
+              <div class="form-group">
+                <label for="waitlistName">Name</label>
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  id="waitlistName" 
+                  placeholder="Enter your name" 
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="waitlistCompany">Company Name</label>
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  id="waitlistCompany" 
+                  placeholder="Enter your company name" 
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="waitlistEmail">Email Address</label>
+                <input 
+                  type="email" 
+                  class="form-control" 
+                  id="waitlistEmail" 
+                  placeholder="Enter your email" 
+                  required
+                />
+              </div>
+              <div class="btn-box">
+                <button type="submit" class="btn-2">Join Waitlist</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- End waitlist modal section -->
+
     <!-- service section -->
 
     <section id="service_section" class="service_section layout_padding">
@@ -242,10 +300,10 @@
                 <p>
                   A centralized, real-time view of every warranty under your management
                 </p>
-                <a href="">
+                <!-- <a href="">
                   Read More
                   <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                </a>
+                </a> -->
               </div>
             </div>
           </div>
@@ -259,10 +317,10 @@
                 <p>
                   Maintenance reminders and requirements generated and scheduled automatically
                 </p>
-                <a href="">
+                <!-- <a href="">
                   Read More
                   <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                </a>
+                </a> -->
               </div>
             </div>
           </div>
@@ -276,10 +334,10 @@
                 <p>
                   Simplified claim submissions that compile all necessary documentation in one click
                 </p>
-                <a href="">
+                <!-- <a href="">
                   Read More
                   <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                </a>
+                </a> -->
               </div>
             </div>
           </div>
