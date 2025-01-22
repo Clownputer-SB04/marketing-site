@@ -229,7 +229,7 @@
 
     <!-- Waitlist Modal -->
     <div class="modal fade" id="waitlistModal" tabindex="-1" role="dialog" aria-labelledby="waitlistModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="waitlistModalLabel">Join Our Waitlist</h5>
@@ -239,13 +239,13 @@
           </div>
           <div class="modal-body">
             <!-- Form Fields -->
-            <form>
+            <form action="https://formspree.io/f/mgvowzqp" method="post">
               <div class="form-group">
                 <label for="waitlistName">Name</label>
                 <input 
                   type="text" 
                   class="form-control" 
-                  id="waitlistName" 
+                  name="waitlistName" 
                   placeholder="Enter your name" 
                   required
                 />
@@ -255,7 +255,7 @@
                 <input 
                   type="text" 
                   class="form-control" 
-                  id="waitlistCompany" 
+                  name="waitlistCompany" 
                   placeholder="Enter your company name" 
                   required
                 />
@@ -265,14 +265,12 @@
                 <input 
                   type="email" 
                   class="form-control" 
-                  id="waitlistEmail" 
+                  name="waitlistEmail" 
                   placeholder="Enter your email" 
                   required
                 />
               </div>
-              <div class="btn-box">
-                <button type="submit" class="btn-2">Join Waitlist</button>
-              </div>
+              <button type="submit" class="btn_box">Join Waitlist</button>
             </form>
           </div>
         </div>
